@@ -1,12 +1,11 @@
-/** import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import reactLogo from '../assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-*/
-import '../../App.css';
-import Content from '../Content/Content';
-import Header from '../Header/Header';
-import Total from '../Total/Total';
+
+import Header from 'components/Header/Header';
+import Content from 'components/Content/Content';
+import Total from 'components/Total/Total';
+
 
 const App = () => {
   const course = 'Half Stack application development'
@@ -19,10 +18,19 @@ const App = () => {
 
   return (
     <div>
-      <Header course={course}/>
-      <Content part1={part1} exercice1={exercises1} part2={part2} exercice2={exercises2} part3={part3} exercice3={exercises3}/>
-      <Total exercice1={exercises1} exercice2={exercises2} exercice3={exercises3}/>
+      <Header course={course} />
+      <Content part1={part1} exercice1={exercises1} part2={part2} exercice2={exercises2} part3={part3} exercice3={exercises3} />
+      <Total exercice1={exercises1} exercice2={exercises2} exercice3={exercises3} />
     </div>
+
+    /**   <div>
+     <Header {...{ course }} />
+     <Content
+       {...{ part1, exercises1, part2, exercises2, part3, exercises3 }}
+     />
+     <Total {...{ exercises1, exercises2, exercises3 }} />
+   </div>
+    */
   )
 }
 

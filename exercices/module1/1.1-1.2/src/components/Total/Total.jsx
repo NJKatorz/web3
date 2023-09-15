@@ -1,5 +1,3 @@
-import '../../App.css';
-
 const Total = ({exercice1, exercice2, exercice3}) => {
      
     return (
