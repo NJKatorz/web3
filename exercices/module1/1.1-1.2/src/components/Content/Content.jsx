@@ -10,18 +10,11 @@ const Content = ({
 }) => {
     return (
         <div>
-        <p>
           <Part part={part1} exercice={exercice1}/>
-        </p>  
-        <p>
           <Part part={part2} exercice={exercice2}/>
-        </p>
-        <p>
           <Part part={part3} exercice={exercice3}/>
-        </p> 
         </div>
       )
 }
-
 
 export default Content
