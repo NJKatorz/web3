@@ -1,12 +1,18 @@
-const Person = ({ name, number, deleteButton }) => {
-    const handleDeleteClick = e => {
-        e.preventDefault()
-        deleteButton({name, number})
-      }
-    
-    return (
-        <div key={name}> {name} {number} <button onClick={handleDeleteClick}> delete </button> </div> 
-    )
+import React from "react"
+
+const Person = ({ person, removePerson }) => {
+
+  const handleDeleteClick = e => {
+    e.preventDefault()
+    removePerson(person)
+  }
+
+  return (
+    <p>
+      {person.name} : {person.number} <button onClick={handleDeleteClick}>Delete</button>
+    </p>
+  )
+
 }
 
 export default Person
