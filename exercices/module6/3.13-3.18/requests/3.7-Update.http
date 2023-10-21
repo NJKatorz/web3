@@ -1,0 +1,15 @@
+@hostname = localhost
+@port = 3001
+@host = http://{{hostname}}:{{port}}
+@personId = 65325f1251faa82e10c55153
+
+
+###
+PUT {{host}}/api/persons/{{personId}} HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Johnny Doe",
+  "number": "12-34-5678901234"
+}
