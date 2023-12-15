@@ -11,4 +11,7 @@ mongoDB
         npm install mongoose
         npm install dotenv
 ant design
-        npm install antd --save        
+        npm install antd --save
+graphQL
+        npm install --save graphql
+        npm install @apollo/server graphql
