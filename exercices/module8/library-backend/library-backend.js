@@ -1,6 +1,6 @@
 const { ApolloServer } = require('@apollo/server')
 const { startStandaloneServer } = require('@apollo/server/standalone')
-
+const { v1: uuid } = require('uuid');
 
 const authors = [
     {
@@ -86,7 +86,7 @@ const typeDefs = `
 type Author {
     name: String!
     id: ID!
-    born: Int!
+    born: Int
     bookCount: Int!
 }
 

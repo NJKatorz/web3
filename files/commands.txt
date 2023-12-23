@@ -13,5 +13,8 @@ mongoDB
 ant design
         npm install antd --save
 graphQL
-        npm install --save graphql
-        npm install @apollo/server graphql
+        server
+                npm install --save graphql
+                npm install @apollo/server graphql
+        client
+                npm install @apollo/client graphql
