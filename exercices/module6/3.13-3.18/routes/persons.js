@@ -8,6 +8,7 @@ router.get('/', (request, response) => {
         console.log(persons)
         response.json(persons)
     })
+    
 })
 
 // Get by id

@@ -19,6 +19,7 @@ const App = () => {
       .then(persons => setPersons(persons))
       .catch(error => console.warn(error))
   }
+  
   useEffect(initialLoad, [])
 
   const upsertPerson = payload => {
